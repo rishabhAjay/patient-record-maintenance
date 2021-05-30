@@ -13,7 +13,7 @@ app.use(cookieParser());
 
 app.use(
   session({
-    secret: '123456cat',
+    secret: 'any secret text',
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 600000 },
