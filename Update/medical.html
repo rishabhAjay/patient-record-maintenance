@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Medical Details</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color:#26272b;">
+    <a class="navbar-brand "hidden-sm" href="/homepage"> <img src="images/qwe.png" width="30" height="30" class="d-inline-block align-top" alt="."</a>
+    <a class="navbar-brand" href="/homepage" style="color:beige">Patient Health Database</a>
+
+  </nav>
+
+    <div class="container">
+        <!-- Patient Medical Details -->
+        <br>
+        <form action="/updateTable2" method="post">
+          <h2 align="Center">Patient Medical Details</h2>
+          <br>
+
+          <div class="form-group">
+              <label for="PID">Select Patient ID: </label>
+              <input type="number" class="form-control" name="pid" id="PID"  placeholder="Enter Patient Id" required>
+          </div>
+
+          <div class="form-group">
+              <label for="age">Age: </label>
+              <input type="number" class="form-control" name="age" id="age" placeholder="Enter age">
+          </div>
+
+          <div class="form-group">
+              <label for="weight">Weight(in KG): </label>
+              <input type="number" class="form-control" name="weight" id="weight" placeholder="Enter weight (in Kg)">
+          </div>
+
+          <div class="form-group">
+              <label for="bloodGroup">Blood Group: </label>
+              <input type="text" class="form-control" name="bloodgroup" id="bloodGroup" placeholder="Enter Blood Group ">
+          </div>
+
+          <div class="form-group">
+              <label for="bloodsugar">Blood sugar(in mg/dl): </label>
+              <input type="number" class="form-control" name="bloodsugar" id="bloodsugar" placeholder="Enter blood sugar">
+          </div>
+
+          <div class="form-group">
+              <label for="BP">BP(in mmHg): </label>
+              <input type="number" class="form-control" name="bp" id="BP" placeholder="Enter BP">
+          </div>
+
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

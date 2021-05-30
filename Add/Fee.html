@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee</title>
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color:#26272b;">
+    <a class="navbar-brand "hidden-sm" href="/homepage"> <img src="images/qwe.png" width="30" height="30" class="d-inline-block align-top" alt="."</a>
+    <a class="navbar-brand" href="/homepage" style="color:beige">Patient Health Database</a>
+
+  </nav>
+
+    <div class="container">
+
+
+        <!-- Patient fee details -->
+        <br>
+        <form>
+            <h2 align="Center">Fee Detail</h2>
+            <br>
+            <div class="form-group">
+                <label for="PID">PID: </label>
+                <input type="PID" class="form-control" id="PID" placeholder="Enter Patient Id">
+            </div>
+
+            <div class="form-group">
+                <label for="Aid">Appointment id: </label>
+                <input type="Appointment" class="form-control" id="date" placeholder="Enter Appointment id">
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount: </label>
+                <input type="amount" class="form-control" id="amount" placeholder="Enter Amount">
+            </div>
+
+            <div class="form-group">
+              <label>Paid :</label>
+              <input type="radio" id="yes" class="yesradio" name="radio1" value="1">
+              <label for="yes">yes</label><br>
+              <input type="radio" id="no" class="noradio" name="radio1" value="0">
+              <label for="no">no</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="paid">Paid On: </label>
+                <input type="date" class="form-control" id="paid" placeholder="Enter Date">
+            </div>
+        </form>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

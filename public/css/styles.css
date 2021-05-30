@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  background-color: white;
+}
+.labeltext {
+  position: absolute;
+  margin-left: -4%;
+  margin-top: 0.4%;
+}
+input {
+  margin-left: 25rem;
+}

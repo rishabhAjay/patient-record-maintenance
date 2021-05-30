@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update other Details</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color:#26272b;">
+    <a class="navbar-brand "hidden-sm" href="/homepage"> <img src="images/qwe.png" width="30" height="30" class="d-inline-block align-top" alt="."</a>
+    <a class="navbar-brand" href="/homepage" style="color:beige">Patient Health Database</a>
+
+  </nav>
+
+    <div class="container">
+        <br>
+        <!-- Other Details -->
+        <form action="/updateTable5" method="post">
+          <!-- <div class="form-group">
+              <label for="PID">PID: </label>
+              <input type="text" class="form-control" name="pidupdate" id="PID"  placeholder="Enter Patient Id" required>
+          </div> -->
+            <br>
+          <h2 align="Center">Other Details: </h2>
+          <br>
+
+          <div class="form-group">
+              <label for="PID">Select Patient ID: </label>
+              <input type="number" class="form-control" name="pid" id="PID"  placeholder="Enter Patient Id" required>
+          </div>
+
+          <div class="form-group">
+              <label for="dep">Department: </label>
+              <input type="text" class="form-control" name="dept" id="dep" placeholder="Enter Department">
+          </div>
+
+          <div class="form-group">
+              <label for="doc">Doctor: </label>
+              <input type="text" class="form-control" name="doc" id="doc" placeholder="Enter Doctor Name">
+          </div>
+
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

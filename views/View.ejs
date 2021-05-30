@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesview.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color:#26272b;">
+    <a class="navbar-brand "hidden-sm" href="/homepage"> <img src="images/qwe.png" width="30" height="30" class="d-inline-block align-top" alt="."</a>
+    <a class="navbar-brand" href="/homepage" style="color:beige">Patient Health Database</a>
+
+  </nav>
+
+
+    <div class="container">
+        <!-- Patient Personal Detail -->
+        <!-- TS : {% template_syntax %} -->
+        <%
+        userData.forEach(function(data){
+        %>
+        <div class="patient-personal-details">
+            <h1 align="center">Patient Details</h1>
+            <h3>Patient ID: <%= data.PID %></h3>
+            <h3>Name: <%= data.Name %></h3>
+            <h3>Email: <%= data.Email %></h3>
+            <h3>Phone no.:  <%= data.Phone %></h3>
+            <h3>Gender:  <%= data.Gender %></h3>
+        </div>
+
+        <hr>
+        <!-- Patient Medical Details -->
+        <div class="patient-medical-database">
+            <h2 align="center">Patient Medical Details</h2>
+            <h3>Age: <%= data.Age %></h3>
+            <h3>Weight(in KG): <%= data.Weight %></h3>
+            <h3>Blood Group: <%= data.Bloodgroup %></h3>
+            <h3>BLood Sugar(in mg/dl): <%= data.Bloodsugar %></h3>
+            <h3>Blood Pressure(in mm/Hg): <%= data.Bloodsugar %></h3>
+        </div>s
+
+        <hr>
+        <!-- Symptoms and Prescription -->
+        <div class="Symptoms-prescription">
+            <h2 align="center">Symptoms and Prescription</h2>
+            <h3>Appointment ID: <%= data.AID %></h3>
+            <h3>Date: <%= data.Date %></h3>
+            <h3>Symptoms: <%= data.Symptoms %></h3>
+            <h3>Prescription(drug name): </h3>
+            <h5 class="viewtext1"><%= data.Prescription %></h5>
+            <h3>Dosage: </h3>
+            <h5 class="viewtext2"><%= data.Dose %></h5>
+        </div>
+
+        <hr>
+        <!-- Fee Detail-->
+        <div class="fee-detail">
+            <h2 align="center">Fee Details</h2>
+            <h3>Amount(in Rupees): <%= data.Amount %></h3>
+            <h3>Paid: <%= data.Paid %></h3>
+            <h3>Date: <%= data.PaidOn %></h3>
+        </div>
+
+        <hr>
+        <!-- other Details -->
+        <div class="department-details">
+            <h2 align="center">Other Details</h2>
+            <h3>Department: <%= data.Department %></h3>
+            <h3>Doctor: <%= data.Doctor %></h3>
+        </div>
+        <% }) %>
+      <br>
+      <form class="" action="/gotohome" method="post">
+        <button type="submit" class="btn btn-warning"name="button">Go Back</button>
+      </form>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

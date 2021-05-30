@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- Bootstrap css link -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color:#26272b;">
+    <a class="navbar-brand "hidden-sm" href="/homepage"> <img src="images/qwe.png" width="30" height="30" class="d-inline-block align-top" alt="."</a>
+    <a class="navbar-brand" href="/homepage" style="color:beige">Patient Health Database</a>
+
+  </nav>
+
+
+
+    <!-- Form Page -->
+
+    <form action="/insert" method="post">
+
+    <div class="container">
+
+        <br>
+        <!-- Personal Details -->
+        <form>
+            <h2 align="Center">Patient Personal Details</h2>
+            <br>
+            <div class="form-group">
+                <label for="PID">Patient ID: </label>
+                <input type="number" class="form-control" name="pid" id="PID"  placeholder="Enter Patient Id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" class="form-control" name = "name" id="name" placeholder="Enter Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" class="form-control" name="email" id="email"  placeholder="yourname@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number: </label>
+                <input type="text" class="form-control" name="phone" id="phone"  placeholder="Enter phone number">
+            </div>
+
+            <div class="form-group">
+              <label>Gender :</label>
+              <input type="radio" id="male" name="gender" value="Male">
+              <label for="male">Male</label><br>
+              <input type="radio" id="female" name="gender" style="margin-left:5.6%" value="Female">
+              <label for="female">Female</label><br>
+              <input type="radio" id="other" name="gender" style="margin-left:5.6%" value="Other">
+              <label for="other">Other</label><br>
+            </div>
+
+
+        <!-- Patient Medical Details -->
+        <br>
+            <h2 align="Center">Patient Medical Details</h2>
+            <br>
+            <div class="form-group">
+                <label for="age">Age: </label>
+                <input type="number" class="form-control" name="age" id="age" placeholder="Enter age">
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Weight(in KG): </label>
+                <input type="number" class="form-control" name="weight" id="weight" placeholder="Enter weight (in Kg)">
+            </div>
+
+            <div class="form-group">
+                <label for="bloodGroup">Blood Group: </label>
+                <input type="text" class="form-control" name="bloodgroup" id="bloodGroup" placeholder="Enter Blood Group ">
+            </div>
+
+            <div class="form-group">
+                <label for="bloodsugar">Blood sugar(in mg/dl): </label>
+                <input type="number" class="form-control" name="bloodsugar" id="bloodsugar" placeholder="Enter blood sugar">
+            </div>
+
+            <div class="form-group">
+                <label for="BP">BP(in mmHg): </label>
+                <input type="number" class="form-control" name="bp" id="BP" placeholder="Enter BP">
+            </div>
+
+        <!-- Prescription and Symptoms -->
+        <br>
+            <h2 align="Center">Patient Prescription and Details</h2>
+            <br>
+            <div class="form-group">
+                <label for="date">Date: </label>
+                <input type="date" class="form-control" name="date" id="date" placeholder="Enter Date">
+            </div>
+
+            <div class="form-group">
+                <label for="Aid">Appointment ID: </label>
+                <input type="number" class="form-control" name="aid" id="date" placeholder="Enter Appointment id">
+            </div>
+
+            <div class="form-group">
+                <label for="symp">Symptoms: </label>
+                <input type="text" class="form-control" id="symp" name="symp" placeholder="Enter Symptoms">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Prescription(drug name): </label>
+                <textarea class="form-control" id="presc" name="pres" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Dosage: </label>
+                <textarea class="form-control" id="dose" name="dose" rows="3"></textarea>
+            </div>
+
+        <!-- Patient fee details -->
+        <br>
+            <h2 align="Center">Fee Detail</h2>
+            <br>
+
+            <div class="form-group">
+                <label for="amount">Amount: </label>
+                <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter Amount">
+            </div>
+
+            <div class="form-group">
+              <label>Paid :</label>
+              <input type="radio" id="yes" name="radio1" value="Yes">
+              <label for="yes">yes</label><br>
+              <input type="radio" id="no" name="radio1" style="margin-left:3.7%" value="No">
+              <label for="no">no</label><br>
+
+            </div>
+
+            <div class="form-group">
+                <label for="paid">Paid On: </label>
+                <input type="date" class="form-control" name="paidon" id="paid" placeholder="Enter Date">
+            </div>
+
+
+            <h2 align="Center">Other Details: </h2>
+            <br>
+
+            <div class="form-group">
+                <label for="dep">Department: </label>
+                <input type="text" class="form-control" name="dept" id="dep" placeholder="Enter Department">
+            </div>
+
+            <div class="form-group">
+                <label for="doc">Doctor: </label>
+                <input type="text" class="form-control" name="doc" id="doc" placeholder="Enter Doctor Name">
+            </div>
+
+        <br>
+
+          <button class="btn btn-danger btn-block" type="submit">Submit</button>
+        <br>
+
+    </div>
+
+</form>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

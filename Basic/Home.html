@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="icon" href="images/favicon.ico">
+  <!-- Bootstrap css link -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/dbms1.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color:#26272b;">
+    <a class="navbar-brand "hidden-sm" href="/homepage"> <img src="images/qwe.png" width="30" height="30" class="d-inline-block align-top" alt="."</a>
+    <a class="navbar-brand" href="/homepage" style="color:beige">Patient Health Database</a>
+
+            <ul class="navbar-nav mr-auto">
+		          <li class="nav-item">
+			          <form align="right" name="form1" action="/logout">
+  				      <button type = "submit" class = "btn btn-primary btn-sm logoutLblPos">LOGOUT</button>
+			          </form>
+		          </li>
+            </ul>
+
+  </nav>
+
+ <h1>OPTIONS</h1>
+ <form method="post" action="/homepage">
+  <button type="submit" class="btn btn-dark button btn-lg"name="homebutton"    value="1" style="margin-left:45.5%">Insert</button><br/>
+	<button type="submit" class="btn btn-danger button btn-lg" name="homebutton"    value="2" style="margin-left:45.5%">Delete</button><br/>
+	<button type="submit" class="btn btn-warning button btn-lg" name="homebutton"   value="3" style="margin-left:45.5%">Update</button><br/>
+	<button type="submit" class="btn btn-light button btn-lg" name="homebutton"      value="4" style="margin-left:45.5%"> View</button><br/>
+</form>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Update Personal Detail</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="background-color:#26272b;">
+    <a class="navbar-brand "hidden-sm" href="/homepage"> <img src="images/qwe.png" width="30" height="30" class="d-inline-block align-top" alt="."</a>
+    <a class="navbar-brand" href="/homepage" style="color:beige">Patient Health Database</a>
+
+  </nav>
+
+    <div class="container">
+
+        <!-- Personal Details -->
+        <form action="/updateTable1" method="post">
+          <div class="form-group">
+            <br>
+            <h2>Enter the required patient ID for updation</h2>
+            <br>
+              <label for="PID">Select Patient ID: </label>
+              <input type="number" class="form-control" name="pidupdate" id="PID"  placeholder="Enter Patient Id" required>
+          </div>
+            <br>
+
+          <h2 align="Center">Patient Personal Details</h2>
+          <br>
+          <div class="form-group">
+              <label for="PID">Updated Patient ID: </label>
+              <input type="number" class="form-control" name="pid" id="PID"  placeholder="Enter Patient Id" required>
+          </div>
+
+          <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" class="form-control" name = "name" id="name" placeholder="Enter Name">
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email: </label>
+              <input type="email" class="form-control" name="email" id="email"  placeholder="yourname@email.com">
+          </div>
+
+          <div class="form-group">
+              <label for="phone">Phone Number: </label>
+              <input type="number" class="form-control" name="phone" id="phone"  placeholder="Enter phone number">
+          </div>
+
+          <div class="form-group">
+            <label>Gender :</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label><br>
+          </div>
+
+
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
